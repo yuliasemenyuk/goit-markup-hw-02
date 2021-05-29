@@ -1,10 +1,12 @@
 /* Переменные */
 :root {
     --primary-white-color: #FFFFFF;
-    --secondary-background-color: #F5F4FA;
+    --medium-background-color: #F5F4FA;
+    --dark-background-color: #2F303A;
     --text-color: #757575;
     --title-text-color: #212121;
     --accent-color: #2196F3;
+
 }
 
 body{
@@ -13,6 +15,7 @@ body{
     font-family: Roboto, sans-serif;
     font-size: 14px;
     font-weight: 400;
+    letter-spacing: 0.03em;
 }
 .list{
     list-style: none;
@@ -25,7 +28,6 @@ body{
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
     text-decoration: none;
 }
 .logo-accent {
@@ -53,5 +55,127 @@ body{
     letter-spacing: 0.02em;
     text-decoration: none;
     color: inherit;
-   
+}
+.contacts .link:hover,
+.contacts .link:focus{
+    color: var(--accent-color);
+}
+/* Герой */
+.hero {
+    background-color: var(--dark-background-color);
+}
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36x;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+}
+.hero-button{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    cursor: pointer;
+}
+/* Преимущетва */
+.feature-list {
+    list-style: none;
+}
+.feature-title {
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--title-text-color);
+}
+.feature-description {
+    line-height: 1.71;
+}
+/* <!-- Чем мы занимаемся --> */
+.diretions-section-title,
+.members-section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    color: var(--title-text-color);
+}
+/* !-- Наша команда -- */
+.members-section {
+    background-color: var(--medium-background-color);
+}
+.member-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    color: var(--title-text-color);
+}
+.member-description{
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+
+/* Наши проекты */
+.filter-buttom{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    color: var(--title-text-color);
+    background-color: var(--medium-background-color);
+    cursor: pointer;
+}
+.filter-buttom:hover,
+.filter-buttom:focus{
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
+.project-list{
+    list-style: none;
+}
+.project-list .link{
+    text-decoration: none;
+    color: inherit;
+}
+.project-title {
+font-weight: 700;
+font-size: 18px;
+line-height: 2.0;
+letter-spacing: 0.06em;
+color: var(--title-text-color);
+}
+.project-type{
+    font-size: 16px;
+    line-height: 1.87;
+}
+
+/* Футер */
+.footer{
+    background-color: var(--dark-background-color);
+}
+.footer .logo{
+    color: var(--primary-white-color);
+}
+.address{
+    font-style:inherit;
+    line-height: 1.71;
+    color: var(--primary-white-color);
+}
+.address .link{
+    text-decoration: none;
+    font-style: inherit;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+}
+.address .link:hover,
+.address .link:focus{
+    color: var(--accent-color);
 }
