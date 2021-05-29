@@ -1,0 +1,57 @@
+/* Переменные */
+:root {
+    --primary-white-color: #FFFFFF;
+    --secondary-background-color: #F5F4FA;
+    --text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+}
+
+body{
+    background-color: var(--primary-white-color);
+    color: var(--text-color);
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+.list{
+    list-style: none;
+}
+
+/* Лого */
+.logo {
+    color: #000000;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+.logo-accent {
+    color: var(--accent-color);
+}
+/* Навигация сайта */
+.site-nav .link{
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
+    text-decoration: none;
+}
+.site-nav .current-page .link {
+    color: var(--accent-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus{
+    color: var(--accent-color);
+}
+/* Контакты */
+.contacts .link{
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: inherit;
+   
+}
